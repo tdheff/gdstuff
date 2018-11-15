@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "/path/to/godot/binary --path \"${workspaceRoot}\"",
+            "problemMatcher": []
+        },
+        {
+            "label": "build",
+            "command": "/path/to/msbuild/binary",
+            "args": [
+                "/p:Configuration=Tools;Platform=Any CPU;GenerateFullPaths=true",
+                "/t:build"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
